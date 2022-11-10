@@ -11,6 +11,6 @@ jobs:
     name: Hello
     runs-on: ubuntu-latest
     steps:
-      - name: Say Hello
+      - name: Say hello, name=${{ github.event.inputs.name }}
         run: |
           echo "Hello ${{ github.event.inputs.name }}!"
